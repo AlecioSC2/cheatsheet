@@ -4,10 +4,6 @@ Cheatsheet of commands/code snippets/code examples/configurations because I keep
 ## Nodejs
 
 - Node modules binaries directory: `./node_modules/.bin`
-- Save dev flag: `--save-dev`
-
-## NPM
-
 - setTimeout: `setTimeout(() => console.log('timeout!'), 1000);`
 - Set Timeout Promise:
 ```javaScript
@@ -15,6 +11,10 @@ const util = require('util');
 const setTimeoutPromise = util.promisify(setTimeout);
 setTimeoutPromise(1000).then(() => doSomething());
 ```
+
+## NPM
+
+- Save dev flag: `--save-dev`
 
 ## NVM
 
