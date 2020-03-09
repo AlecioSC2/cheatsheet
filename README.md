@@ -31,6 +31,27 @@ setTimeoutPromise(1000).then(() => doSomething());
 
 - Reduce: `arr.reduce((accumulator, currentValue) => doSomething(), initialValue)`
 - Remove element `i` in `array`: `var removed = array.splice(i,1);`
+- What is `this` in JavaScript?
+    ```javascript
+    function foo() {
+      // not real syntax!!! ⚠
+      if(foo is an ArrowFunction) doNothing; // Arrow functions inherit this from the parent scope
+      else if(foo called with new) this = {};
+      else if(
+        foo called with apply ||
+        foo called with call  ||
+        foo called with bind  ||
+      ) this = thisArg
+      else if(foo called within an object) this = thatObject
+      else if(strictMode){
+        this = undefined
+      } else{
+        // default binding, last resort
+        this = window;
+        // or global in node
+      }
+    }
+    ```
 ## Reactjs
 
 ## Vuejs
