@@ -31,6 +31,9 @@ setTimeoutPromise(1000).then(() => doSomething());
 
 - Reduce: `arr.reduce((accumulator, currentValue) => doSomething(), initialValue)`
 - Remove element `i` in `array`: `var removed = array.splice(i,1);`
+- Clone an array: `const cloned = [...array]`;
+- Sort array of numbers: `array.sort((n1, n2) => n1-n2);`
+- Add `item` in `index`: `array.splice(index, 0, item);`
 - What is `this` in JavaScript?
     ```javascript
     function foo() {
