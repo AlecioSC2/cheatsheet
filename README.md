@@ -15,6 +15,7 @@ setTimeoutPromise(1000).then(() => doSomething());
 ## NPM
 
 - Save dev flag: `--save-dev`
+- Publish scoped public package: `npm publish --access public`
 
 ## NVM
 
