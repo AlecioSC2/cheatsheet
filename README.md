@@ -56,6 +56,17 @@ setTimeoutPromise(1000).then(() => doSomething());
       }
     }
     ```
+- Fetch JSON syntax:
+    ```javascript
+    fetch(url + '?<query-params>', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+    ```
 ## Reactjs
 
 ## Vuejs
