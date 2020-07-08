@@ -67,6 +67,8 @@ setTimeoutPromise(1000).then(() => doSomething());
       .then((response) => response.json())
       .then((json) => console.log(json));
     ```
+- [Classes in JavaScript](./examples/javascript-classes.js)
+
 ## Reactjs
 
 ## Vuejs
