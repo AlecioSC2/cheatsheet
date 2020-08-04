@@ -11,7 +11,7 @@ const util = require('util');
 const setTimeoutPromise = util.promisify(setTimeout);
 setTimeoutPromise(1000).then(() => doSomething());
 ```
-- Make Promises Safe:
+- Handle unhandled Promises:
 ```
 process.on('unhandledRejection', (err) => {
   console.error(err);
