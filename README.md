@@ -12,7 +12,7 @@ const setTimeoutPromise = util.promisify(setTimeout);
 setTimeoutPromise(1000).then(() => doSomething());
 ```
 - Handle unhandled Promises:
-```
+```javaScript
 process.on('unhandledRejection', (err) => {
   console.error(err);
   if (module.exports.abort) {
