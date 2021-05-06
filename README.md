@@ -95,6 +95,17 @@ process.on('unhandledRejection', (err) => {
 ## AEM
 
 - Get ContextHub `userType`: `JSON.parse(localStorage.getItem('ContextHubPersistence')).store['usertypes-jsonp'].userType`
+- Create a new project using the Maven archetype
+  ```
+  mvn -X -B archetype:generate \
+   -D archetypeGroupId=com.adobe.aem \
+   -D archetypeArtifactId=aem-project-archetype \
+   -D archetypeVersion=27 \
+   -D appTitle="AEM Test" \
+   -D appId="test" \
+   -D groupId="com.test"
+   -D aemVersion=6.5.7
+  ```
 
 ## Git
 
