@@ -119,6 +119,7 @@ process.on('unhandledRejection', (err) => {
 - scp:
     - `scp your_username@remotehost.edu:foobar.txt /some/local/directory`
     - `scp foobar.txt your_username@remotehost.edu:/some/remote/directory`
+- Recursively change group: `chgrp -R GROUPNAME DIRECTORY-OR-PATH`
 
 ## VIM
 
